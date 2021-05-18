@@ -1,6 +1,4 @@
-type ExampleEntity @entity {
+type Fee @entity {
   id: ID!
-  count: BigInt!
-  token: Bytes! # address
-  from: Bytes! # address
+  totalFees: BigDecimal!
 }
