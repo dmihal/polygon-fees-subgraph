@@ -1,4 +1,6 @@
 type Fee @entity {
   id: ID!
   totalFees: BigDecimal!
+  totalFeesUSD: BigDecimal!
+  maticPrice: BigDecimal!
 }
