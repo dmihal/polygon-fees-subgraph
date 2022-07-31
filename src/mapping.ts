@@ -25,7 +25,7 @@ export function handleLogFeeTransfer(event: LogFeeTransfer): void {
 }
 
 export function handleQuickswapSync(event: Sync): void {
-  let entity = Fee.load('1')
+  let entity = Fee.load('1')!
 
   entity.maticPrice = event.params.reserve1
     .times(TWELVE_DECIMALS)

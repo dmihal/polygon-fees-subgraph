@@ -1,4 +1,4 @@
-specVersion: 0.0.2
+specVersion: 0.0.4
 schema:
   file: ./schema.graphql
 dataSources:
@@ -8,10 +8,10 @@ dataSources:
     source:
       address: "0x0000000000000000000000000000000000001010"
       abi: Contract
-      startBlock: 5498000
+      startBlock: 0
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.4
+      apiVersion: 0.0.6
       language: wasm/assemblyscript
       entities:
         - Fee
@@ -28,10 +28,10 @@ dataSources:
     source:
       address: "0x6e7a5FAFcec6BB1e78bAE2A1F0B612012BF14827"
       abi: UniV2Pool
-      startBlock: 5498091
+      startBlock: 5498090
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.4
+      apiVersion: 0.0.6
       language: wasm/assemblyscript
       entities:
         - Fee
